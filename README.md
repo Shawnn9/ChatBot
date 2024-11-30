@@ -1,6 +1,6 @@
 # ChatBot Project
 ![Test Status](https://img.shields.io/github/workflow/status/Shawnn9/ChatBot/Run%20Tests)
-
+[![CI Status](https://github.com/Shawnn9/ChatBot/actions/workflows/ci.yml/badge.svg)](https://github.com/Shawnn9/ChatBot/actions/workflows/ci.yml)
 ## Introduction
 
 This chatbot is a simple conversational agent built using **Python**. It can interact with users, answer a variety of questions, tell jokes, check the weather, and more. To ensure that the knowledge base (questions and answers) is protected, it is stored in an encrypted format. The bot decrypts the knowledge base on runtime and uses it to answer user queries.
