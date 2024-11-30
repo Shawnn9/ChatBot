@@ -1,3 +1,4 @@
+from cryptography.fernet import Fernet
 import nltk
 import random
 import requests
@@ -10,9 +11,19 @@ import json
 # Download the required NLTK datasets
 nltk.download('punkt')
 
-# Load the decrypted questions and answers from the file
-with open("questions_decrypted.json", "r") as file:
-    questions_data = json.load(file)
+# The encryption key (ensure this is correct)
+key = b'VeszHauMVwweVvYTD9slfzhai9rvuKbVAH16LEw7_ts='  # Encryption key
+cipher_suite = Fernet(key)
+
+# Read and decrypt the encrypted file containing questions and answers
+with open("questions_encrypted.json", "rb") as encrypted_file:
+    encrypted_data = encrypted_file.read()
+
+# Decrypt the data
+decrypted_data = cipher_suite.decrypt(encrypted_data)
+
+# Convert the decrypted data back to JSON format
+questions_data = json.loads(decrypted_data.decode("utf-8"))
 
 # Define patterns from the decrypted data
 patterns = [(r'{}'.format(q['question']), q['answer']) for q in questions_data]
