@@ -1,5 +1,5 @@
 import unittest
-from chatbot import chatbot_response, get_weather, extract_city_from_input
+from chatbot.chatbot import chatbot_response, get_weather, extract_city_from_input
 
 class TestChatBot(unittest.TestCase):
 
