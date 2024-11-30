@@ -1,4 +1,3 @@
-from cryptography.fernet import Fernet
 import nltk
 import random
 import requests
@@ -7,6 +6,7 @@ from nltk.chat.util import Chat, reflections
 from textblob import TextBlob
 from googlesearch import search
 import json
+from cryptography.fernet import Fernet  # Add this import
 
 # Download the required NLTK datasets
 nltk.download('punkt')
@@ -16,7 +16,7 @@ key = b'VeszHauMVwweVvYTD9slfzhai9rvuKbVAH16LEw7_ts='  # Encryption key
 cipher_suite = Fernet(key)
 
 # Read and decrypt the encrypted file containing questions and answers
-with open("questions_encrypted.json", "rb") as encrypted_file:
+with open("chatbot/questions_encrypted.json", "rb") as encrypted_file:
     encrypted_data = encrypted_file.read()
 
 # Decrypt the data
@@ -27,30 +27,6 @@ questions_data = json.loads(decrypted_data.decode("utf-8"))
 
 # Define patterns from the decrypted data
 patterns = [(r'{}'.format(q['question']), q['answer']) for q in questions_data]
-
-# Function to get weather information
-def get_weather(city="London"):
-    api_key = "YOUR_API_KEY"  # Replace with your actual API key
-    url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
-    
-    response = requests.get(url)
-    data = response.json()
-
-    if data["cod"] == "404":
-        return "Sorry, I couldn't find the weather information."
-    else:
-        main = data["main"]
-        weather_desc = data["weather"][0]["description"]
-        temp = main["temp"]
-        return f"The current temperature in {city} is {temp}°C with {weather_desc}."
-
-# Function to extract city name from user input using basic string matching
-def extract_city_from_input(user_input):
-    cities = ["London", "New York", "Paris", "Tokyo", "Berlin", "Los Angeles", "Sydney", "Moscow", "Rome"]
-    for city in cities:
-        if city.lower() in user_input.lower():
-            return city
-    return None 
 
 # Function to analyze sentiment
 def get_sentiment(text):
@@ -72,13 +48,6 @@ def google_search(query):
 def chatbot_response(user_input):
     user_input = user_input.lower()  
 
-    # Check if user is asking about the weather
-    if "weather" in user_input:
-        city = extract_city_from_input(user_input)
-        if city:
-            return get_weather(city)
-        return get_weather()
-    
     # Check if user wants sentiment analysis
     if "how do i feel" in user_input:
         return get_sentiment(user_input)
