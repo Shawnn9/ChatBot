@@ -1,6 +1,6 @@
-# 🤖 ChatBot Project 🤖
+# 🤖 **ChatBot Project** 🤖
 
-## Technologies Used
+## 🚀 **Technologies Used**
 
 This project utilizes the following Python-related technologies:
 
@@ -15,31 +15,37 @@ This project utilizes the following Python-related technologies:
 
 [![CI Status](https://github.com/Shawnn9/ChatBot/actions/workflows/ci.yml/badge.svg)](https://github.com/Shawnn9/ChatBot/actions/workflows/ci.yml)
 
-## Introduction
+---
 
-This chatbot is a simple conversational agent built using **Python**. It can interact with users, answer a variety of questions, tell jokes, and provide real-time data like weather information. To ensure that the knowledge base (questions and answers) is protected, it is stored in an encrypted format, which is decrypted during runtime.
+## 🌟 **Introduction**
 
-### Key Features:
-- **General Knowledge**: The bot can answer a wide range of factual questions.
-- **Entertainment**: It can tell jokes, provide fun facts, and trivia.
-- **Google Search**: If the bot doesn't know the answer, it performs a Google search.
-- **Encrypted Knowledge Base**: The questions and answers are encrypted for security, ensuring no unauthorized access.
-- **Sentiment Analysis**: The bot can analyze sentiment and respond based on whether the user is happy, sad, or neutral.
+Welcome to the **ChatBot** project! This chatbot is a simple conversational agent built using **Python**. It can interact with users, answer a variety of questions, tell jokes, provide real-time weather information, and more. The knowledge base (questions and answers) is stored in an encrypted format for security, and the bot decrypts the data at runtime to provide relevant responses.
 
-## Features
+### 💡 **Key Features**:
+- **General Knowledge**: Answers questions about science, history, geography, and more.
+- **Entertainment**: Provides fun facts, jokes, and trivia.
+- **Encrypted Data**: Knowledge base is securely encrypted using `cryptography`.
+- **Google Search**: Performs Google search if the bot doesn't know the answer.
+- **Sentiment Analysis**: Analyzes sentiment and responds based on whether the user is happy, sad, or neutral.
 
-- **General Knowledge**: The bot can answer questions on topics like science, history, geography, and more.
-- **Entertainment**: The bot provides jokes, fun facts, and trivia to keep the conversation lively.
-- **Google Search**: If the bot doesn't know the answer, it will search Google and provide relevant results.
-- **Encrypted Data**: The knowledge base is securely encrypted using the `cryptography` library, ensuring that no one can access it without the decryption key.
-- **Sentiment Analysis**: Using **TextBlob**, the bot analyzes the sentiment of the user's message and responds accordingly (e.g., happy, sad).
+---
 
-## Installation
+## ✨ **Project Features**
+
+- **General Knowledge**: The bot can answer questions across various fields like science, history, geography, and current events.
+- **Entertainment**: The bot provides jokes, trivia, and fun facts to entertain users.
+- **Google Search**: Can't find an answer? The bot will perform a quick Google search for you!
+- **Encrypted Data**: All the knowledge is securely stored and encrypted with **Cryptography**.
+- **Sentiment Analysis**: By using **TextBlob**, the bot can detect if you're happy, sad, or neutral based on your text input and tailor its responses accordingly.
+
+---
+
+## 🛠️ **Installation**
+
+To get started with this chatbot on your local machine, follow these installation steps:
 
 ### 1. Clone the Repository
 
-Clone this repository to your local machine:
-
 ```bash
-git clone https://github.com/Shawnn9/ChatBot.git
-cd ChatBot
+git clone https://github.com/your-username/chatbot.git
+cd chatbot
