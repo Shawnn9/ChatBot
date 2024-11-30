@@ -1,17 +1,5 @@
 # ChatBot Project
 
-## Table of Contents
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [File Structure](#file-structure)
-- [How It Works](#how-it-works)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Introduction
 
 This chatbot is a simple conversational agent built using **Python**. It can interact with users, answer a variety of questions, tell jokes, check the weather, and more. To ensure that the knowledge base (questions and answers) is protected, it is stored in an encrypted format. The bot decrypts the knowledge base on runtime and uses it to answer user queries.
