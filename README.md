@@ -1,4 +1,5 @@
 # ChatBot Project
+![Test Status](https://img.shields.io/github/workflow/status/Shawnn9/ChatBot/Run%20Tests)
 
 ## Introduction
 
