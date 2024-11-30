@@ -9,7 +9,7 @@ with open("secret.key", "wb") as key_file:
     key_file.write(key)
 
 # Read the JSON file with questions and answers
-with open("questions.json", "rb") as file:
+with open("questions_decrypted.json", "rb") as file:
     file_data = file.read()
 
 # Encrypt the file data
