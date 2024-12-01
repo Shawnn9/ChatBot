@@ -13,7 +13,6 @@ This project utilizes the following Python-related technologies:
   <img alt="unittest" src="https://img.shields.io/badge/unittest-testing-green" />
 </div>
 
-[![CI Status](https://github.com/Shawnn9/ChatBot/actions/workflows/ci.yml/badge.svg)](https://github.com/Shawnn9/ChatBot/actions/workflows/ci.yml)
 
 ---
 
