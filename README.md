@@ -4,7 +4,7 @@
 
 This project utilizes the following Python-related technologies:
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 20px;">
+<div style="display: flex; flex-wrap; wrap; justify-content: center; gap: 20px; padding: 20px;">
   <img src="https://img.shields.io/badge/Python-Programming-yellowgreen" alt="Python" />
   <img alt="Git" src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
   <img alt="TextBlob" src="https://img.shields.io/badge/TextBlob-NLP-lightgrey?logo=python" />
@@ -37,6 +37,14 @@ Welcome to the **ChatBot** project! This chatbot is a simple conversational agen
 - **Google Search**: Can't find an answer? The bot will perform a quick Google search for you!
 - **Encrypted Data**: All the knowledge is securely stored and encrypted with **Cryptography**.
 - **Sentiment Analysis**: By using **TextBlob**, the bot can detect if you're happy, sad, or neutral based on your text input and tailor its responses accordingly.
+
+---
+
+## 📄 **Project Details**
+
+| **GitHub Repo Size** | **Python Version** | **Last Commit** | **Tests** |
+|-----------------------|--------------------|------------------|-----------|
+| ![Repo Size](https://img.shields.io/github/repo-size/Shawnn9/ChatBot) | ![Python Version](https://img.shields.io/badge/Python-3.8+-blue) | ![Last Commit](https://img.shields.io/github/last-commit/Shawnn9/ChatBot) | ![Tests](https://img.shields.io/badge/Tests-Passing-brightgreen) |
 
 ---
 
